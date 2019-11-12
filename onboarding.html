@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Refine Itineraries - YOLO</title>
+    <link rel="icon" href="assets/img/logo-tile.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/onboarding.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/Date-Picker-From-and-To.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightpick@1.3.4/css/lightpick.min.css">
+
+    <link rel="stylesheet" href="assets/css/to-do-list.css">
+</head>
+
+<body style="background:rgb(157, 151, 199)">
+        
+    <nav class="navbar navbar-light navbar-expand bg-light navigation-clean">
+        <div class="container"><a class="navbar-brand " href="trip-plan.html"><span><i class="fas fa-backward"></i> Go to my dashboard </span></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"></button>
+            <div class="collapse navbar-collapse" id="navcol-1"></div>
+        </div>
+    </nav>
+
+ 
+   
+    <section class="questionnaire">
+        <div class="container" id="trip type">
+            <div class="col title">
+                <h1 class="text-dark site-heading-lower mb-3 ">Help us refine your Itinerary</h1>
+            </div>
+
+            <hr class="split-line">
+            <form class="user">
+                <!--first card: age & gender-->
+                <div class="card p-5 mx-4 mb-3">
+                    <!--section heading-->
+                    <h2 class="section-heading mb-4"><span class="section-heading-lower">Tell us more about you</span></h2>
+                    <div class="form-group row">
+                        <div class="col-sm-6 mb-3 mb-sm-0">Age<input class="form-control form-control-user" type="text" id="exampleFirstName" placeholder="Age(yrs)" name="first_name"></div>
+                        <div class="col-sm-6">Gender<input class="form-control form-control-user" type="text" id="exampleFirstName" placeholder="M/F" name="last_name"></div>
+                    </div>
+                    
+                </div>
+                <!--second card: Travel with-->
+                <div class="card p-5 mx-4 mb-3">
+                    <!--section heading-->
+                    <h2 class="section-heading mb-4"><span class="section-heading-upper">Please select from the following travel types</span><span class="section-heading-lower">Who are you going to travel with</span></h2>
+                    <div class="custom-select" style="width:200px;">
+                        <select>
+                            <option value="0">Select type</option>
+                            <option value="1">Family Travel</option>
+                            <option value="2">Couple</option>
+                            <option value="3">Friends</option>
+                            <option value="4">Educational(school)</option>
+                            <option value="5">Educational(company)</option>
+                            <option value="6">Others</option>
+                            </select>
+                    </div>
+                </div>
+                <!--second card: Travel with-->
+                <div class="card p-5 mx-4 mb-3" >
+                        <!--section heading-->
+                        <h2 class="section-heading mb-4"><span class="section-heading-upper">Please select a number for each of the following travel sites and activites</span><span class="section-heading-lower">How much do you like it</span></h2>
+                        <h4><hr>4=Like Most  3=Like  2=Neutral  1=Dislike 0=Would never try</h4>
+                        <!--first row-->
+                        <div class="row">
+                            <!--1st item-->
+                        <div class="card p-0 mb-1 col" style=width:33%>
+                        <div class="container"><img width="90%"src="assets/img/trip5.jpeg"></div>
+                        <div class="wrap">
+                                <h3 class="likert-header ml-3">Taj-Mahal</h3>
+                                <form action="">
+                                  <ul class='likert'style="list-style-type:none;">
+                                    <li>
+                                      <input type="radio" name="likert" value="strong_like">
+                                      <label>4</label>
+                                    </li>
+                                    <li>
+                                      <input type="radio" name="likert" value="like">
+                                      <label>3</label>
+                                    </li>
+                                    <li>
+                                      <input type="radio" name="likert" value="neutral">
+                                      <label>2</label>
+                                    </li>
+                                    <li>
+                                      <input type="radio" name="likert" value="dislike">
+                                      <label>1</label>
+                                    </li>
+                                    <li>
+                                      <input type="radio" name="likert" value="strong_dislike">
+                                      <label>0</label>
+                                    </li>
+                                  </ul>
+
+                                </form>
+                              </div>
+                            
+                            </div>
+                        <!--2nd item-->
+                            <div class="card p-0 mb-1 col" style=width:33%>
+                                    <div class="container"><img width="90%"src="assets/img/trip7.jpeg"></div>
+                                    <div class="wrap">
+                                            <h3 class="likert-header ml-3">Disney Land</h3>
+                                            <form action="">
+                                              <ul class='likert'style="list-style-type:none;">
+                                                <li>
+                                                  <input type="radio" name="likert" value="strong_like">
+                                                  <label>4</label>
+                                                </li>
+                                                <li>
+                                                  <input type="radio" name="likert" value="like">
+                                                  <label>3</label>
+                                                </li>
+                                                <li>
+                                                  <input type="radio" name="likert" value="neutral">
+                                                  <label>2</label>
+                                                </li>
+                                                <li>
+                                                  <input type="radio" name="likert" value="dislike">
+                                                  <label>1</label>
+                                                </li>
+                                                <li>
+                                                  <input type="radio" name="likert" value="strong_dislike">
+                                                  <label>0</label>
+                                                </li>
+                                              </ul>
+                                          
+                                              
+                                            </form>
+                                          </div>
+                                        
+                                </div>
+                                <!--3rd item-->
+                                    <div class="card p-0 mb-1 col" style=width:33%>
+                                        <div class="container"><img width="90%"src="assets/img/trip8.jpeg"></div>
+                                            <div class="wrap">
+                                                <h3 class="likert-header ml-3">Cambridge University</h3>
+                                                <form action="">
+                                                    <ul class='likert'style="list-style-type:none;">
+                                                            <li>
+                                                              <input type="radio" name="likert" value="strong_like">
+                                                              <label>4</label>
+                                                            </li>
+                                                            <li>
+                                                              <input type="radio" name="likert" value="like">
+                                                              <label>3</label>
+                                                            </li>
+                                                            <li>
+                                                              <input type="radio" name="likert" value="neutral">
+                                                              <label>2</label>
+                                                            </li>
+                                                            <li>
+                                                              <input type="radio" name="likert" value="dislike">
+                                                              <label>1</label>
+                                                            </li>
+                                                            <li>
+                                                              <input type="radio" name="likert" value="strong_dislike">
+                                                              <label>0</label>
+                                                            </li>
+                                                          </ul>
+                                                        </form>
+                                                      </div>
+                                                    
+                                        </div>
+                           </div>
+                        <!--second row-->
+                        <div class="row">
+                            <div class="card p-0 mb-1 col" style=width:33%>
+                                <div class="container"><img width="90%"src="assets/img/trip6.jpeg"></div>
+                                <div class="wrap">
+                                        <h3 class="likert-header ml-3">Cappadocia-Turkey</h3>
+                                        <form action="">
+                                          <ul class='likert'style="list-style-type:none;">
+                                            <li>
+                                              <input type="radio" name="likert" value="strong_like">
+                                              <label>4</label>
+                                            </li>
+                                            <li>
+                                              <input type="radio" name="likert" value="like">
+                                              <label>3</label>
+                                            </li>
+                                            <li>
+                                              <input type="radio" name="likert" value="neutral">
+                                              <label>2</label>
+                                            </li>
+                                            <li>
+                                              <input type="radio" name="likert" value="dislike">
+                                              <label>1</label>
+                                            </li>
+                                            <li>
+                                              <input type="radio" name="likert" value="strong_dislike">
+                                              <label>0</label>
+                                            </li>
+                                          </ul>
+        
+                                        </form>
+                                      </div>
+                                    
+                                    </div>
+                                    <div class="card p-0 mb-1 col" style=width:33%>
+                                            <div class="container"><img width="90%"src="assets/img/trip9.jpeg"></div>
+                                            <div class="wrap">
+                                                    <h3 class="likert-header ml-3">Fiji</h3>
+                                                    <form action="">
+                                                      <ul class='likert'style="list-style-type:none;">
+                                                        <li>
+                                                          <input type="radio" name="likert" value="strong_like">
+                                                          <label>4</label>
+                                                        </li>
+                                                        <li>
+                                                          <input type="radio" name="likert" value="like">
+                                                          <label>3</label>
+                                                        </li>
+                                                        <li>
+                                                          <input type="radio" name="likert" value="neutral">
+                                                          <label>2</label>
+                                                        </li>
+                                                        <li>
+                                                          <input type="radio" name="likert" value="dislike">
+                                                          <label>1</label>
+                                                        </li>
+                                                        <li>
+                                                          <input type="radio" name="likert" value="strong_dislike">
+                                                          <label>0</label>
+                                                        </li>
+                                                      </ul>
+                                                  
+                                                      
+                                                    </form>
+                                                  </div>
+                                                
+                                                </div>
+                                                <div class="card p-0 mb-1 col" style=width:33%>
+                                                        <div class="container"><img width="90%"src="assets/img/trip10.jpeg"></div>
+                                                        <div class="wrap">
+                                                                <h3 class="likert-header ml-3">The Great Wall-China</h3>
+                                                                <form action="">
+                                                                  <ul class='likert'style="list-style-type:none;">
+                                                                    <li>
+                                                                      <input type="radio" name="likert" value="strong_like">
+                                                                      <label>4</label>
+                                                                    </li>
+                                                                    <li>
+                                                                      <input type="radio" name="likert" value="like">
+                                                                      <label>3</label>
+                                                                    </li>
+                                                                    <li>
+                                                                      <input type="radio" name="likert" value="neutral">
+                                                                      <label>2</label>
+                                                                    </li>
+                                                                    <li>
+                                                                      <input type="radio" name="likert" value="dislike">
+                                                                      <label>1</label>
+                                                                    </li>
+                                                                    <li>
+                                                                      <input type="radio" name="likert" value="strong_dislike">
+                                                                      <label>0</label>
+                                                                    </li>
+                                                                  </ul>
+                                                                </form>
+                                                              </div>
+                                                            
+                                                            </div>
+                            </div>
+                        <!--third row-->
+                            <div class="row">
+                                    <div class="card p-0 mb-1 col" style=width:33%>
+                                        <div class="container"><img width="90%"src="assets/img/trip5.jpeg"></div>
+                                        <div class="wrap">
+                                                <h3 class="likert-header ml-3">Taj-Mahal</h3>
+                                                <form action="">
+                                                  <ul class='likert'style="list-style-type:none;">
+                                                    <li>
+                                                      <input type="radio" name="likert" value="strong_like">
+                                                      <label>4</label>
+                                                    </li>
+                                                    <li>
+                                                      <input type="radio" name="likert" value="like">
+                                                      <label>3</label>
+                                                    </li>
+                                                    <li>
+                                                      <input type="radio" name="likert" value="neutral">
+                                                      <label>2</label>
+                                                    </li>
+                                                    <li>
+                                                      <input type="radio" name="likert" value="dislike">
+                                                      <label>1</label>
+                                                    </li>
+                                                    <li>
+                                                      <input type="radio" name="likert" value="strong_dislike">
+                                                      <label>0</label>
+                                                    </li>
+                                                  </ul>
+                
+                                                </form>
+                                              </div>
+                                            
+                                            </div>
+                                            <div class="card p-0 mb-1 col" style=width:33%>
+                                                    <div class="container"><img width="90%"src="assets/img/trip5.jpeg"></div>
+                                                    <div class="wrap">
+                                                            <h3 class="likert-header ml-3">Taj-Mahal</h3>
+                                                            <form action="">
+                                                              <ul class='likert'style="list-style-type:none;">
+                                                                <li>
+                                                                  <input type="radio" name="likert" value="strong_like">
+                                                                  <label>4</label>
+                                                                </li>
+                                                                <li>
+                                                                  <input type="radio" name="likert" value="like">
+                                                                  <label>3</label>
+                                                                </li>
+                                                                <li>
+                                                                  <input type="radio" name="likert" value="neutral">
+                                                                  <label>2</label>
+                                                                </li>
+                                                                <li>
+                                                                  <input type="radio" name="likert" value="dislike">
+                                                                  <label>1</label>
+                                                                </li>
+                                                                <li>
+                                                                  <input type="radio" name="likert" value="strong_dislike">
+                                                                  <label>0</label>
+                                                                </li>
+                                                              </ul>
+                                                          
+                                                              
+                                                            </form>
+                                                          </div>
+                                                        
+                                                        </div>
+                                                        <div class="card p-0 mb-1 col" style=width:33%>
+                                                                <div class="container"><img width="90%"src="assets/img/trip5.jpeg"></div>
+                                                                <div class="wrap">
+                                                                        <h3 class="likert-header ml-3">Taj-Mahal</h3>
+                                                                        <form action="">
+                                                                          <ul class='likert'style="list-style-type:none;">
+                                                                            <li>
+                                                                              <input type="radio" name="likert" value="strong_like">
+                                                                              <label>4</label>
+                                                                            </li>
+                                                                            <li>
+                                                                              <input type="radio" name="likert" value="like">
+                                                                              <label>3</label>
+                                                                            </li>
+                                                                            <li>
+                                                                              <input type="radio" name="likert" value="neutral">
+                                                                              <label>2</label>
+                                                                            </li>
+                                                                            <li>
+                                                                              <input type="radio" name="likert" value="dislike">
+                                                                              <label>1</label>
+                                                                            </li>
+                                                                            <li>
+                                                                              <input type="radio" name="likert" value="strong_dislike">
+                                                                              <label>0</label>
+                                                                            </li>
+                                                                          </ul>
+                                                                        </form>
+                                                                      </div>
+                                                                    
+                                                                    </div>
+                                    </div>
+                        <!--forth row-->
+                        <div class="row">
+                                <div class="card p-0 mb-1 col" style=width:33%>
+                                    <div class="container"><img width="90%"src="assets/img/trip5.jpeg"></div>
+                                    <div class="wrap">
+                                            <h3 class="likert-header ml-3">Taj-Mahal</h3>
+                                            <form action="">
+                                              <ul class='likert'style="list-style-type:none;">
+                                                <li>
+                                                  <input type="radio" name="likert" value="strong_like">
+                                                  <label>4</label>
+                                                </li>
+                                                <li>
+                                                  <input type="radio" name="likert" value="like">
+                                                  <label>3</label>
+                                                </li>
+                                                <li>
+                                                  <input type="radio" name="likert" value="neutral">
+                                                  <label>2</label>
+                                                </li>
+                                                <li>
+                                                  <input type="radio" name="likert" value="dislike">
+                                                  <label>1</label>
+                                                </li>
+                                                <li>
+                                                  <input type="radio" name="likert" value="strong_dislike">
+                                                  <label>0</label>
+                                                </li>
+                                              </ul>
+            
+                                            </form>
+                                          </div>
+                                        
+                                </div>
+                                <div class="card p-0 mb-1 col" style=width:33%>
+                                                <div class="container"><img width="90%"src="assets/img/trip5.jpeg"></div>
+                                                <div class="wrap">
+                                                        <h3 class="likert-header ml-3">Taj-Mahal</h3>
+                                                        <form action="">
+                                                          <ul class='likert'style="list-style-type:none;">
+                                                            <li>
+                                                              <input type="radio" name="likert" value="strong_like">
+                                                              <label>4</label>
+                                                            </li>
+                                                            <li>
+                                                              <input type="radio" name="likert" value="like">
+                                                              <label>3</label>
+                                                            </li>
+                                                            <li>
+                                                              <input type="radio" name="likert" value="neutral">
+                                                              <label>2</label>
+                                                            </li>
+                                                            <li>
+                                                              <input type="radio" name="likert" value="dislike">
+                                                              <label>1</label>
+                                                            </li>
+                                                            <li>
+                                                              <input type="radio" name="likert" value="strong_dislike">
+                                                              <label>0</label>
+                                                            </li>
+                                                          </ul>
+                                                      
+                                                          
+                                                        </form>
+                                                      </div>
+                                                    
+                                </div>
+                                                    <div class="card p-0 mb-1 col" style=width:33%>
+                                                            <div class="container"><img width="90%"src="assets/img/trip5.jpeg"></div>
+                                                            <div class="wrap">
+                                                                    <h3 class="likert-header ml-3">Taj-Mahal</h3>
+                                                                    <form action="">
+                                                                      <ul class='likert'style="list-style-type:none;">
+                                                                        <li>
+                                                                          <input type="radio" name="likert" value="strong_like">
+                                                                          <label>4</label>
+                                                                        </li>
+                                                                        <li>
+                                                                          <input type="radio" name="likert" value="like">
+                                                                          <label>3</label>
+                                                                        </li>
+                                                                        <li>
+                                                                          <input type="radio" name="likert" value="neutral">
+                                                                          <label>2</label>
+                                                                        </li>
+                                                                        <li>
+                                                                          <input type="radio" name="likert" value="dislike">
+                                                                          <label>1</label>
+                                                                        </li>
+                                                                        <li>
+                                                                          <input type="radio" name="likert" value="strong_dislike">
+                                                                          <label>0</label>
+                                                                        </li>
+                                                                      </ul>
+                                                                    </form>
+                                                                  </div>
+                                                                
+                                          </div>
+                                </div>
+                        
+                            <div class="buttons">
+                                    <button class="clear">Clear</button>
+                                  </div>
+                    </div>
+                
+
+                
+                    <div class="submit mb-5 p-5"><a href="trip-plan.html" class="button btn d-inline-block btn-primary btn-lg text-dark btn-user" type="submit"> Save preference</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+   
+   
+    <!--footer-->
+    <footer class="footer text-faded text-center py-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 my-auto h-100 text-center text-lg-left">
+                    <p class="text-muted small mb-4 mb-lg-0">© YOLO &nbsp;2019. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/onboarding.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/smart-forms.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightpick@1.3.4/lightpick.min.js"></script>
+    <script src="assets/js/Date-Picker-From-and-To.js"></script>
+    <script src="assets/js/--mp---Progress-bar-animated-on-scroll-when-in-view.js"></script>
+</body>
+
+</html>
